@@ -137,6 +137,9 @@ body {
     height: 60px;
   }
 }
+.kategori .container .col .pilihan a:visited {
+  color: inherit;
+}
 .kategori .container .col .pilihan button {
   padding: 10px 30px !important;
   font-weight: bold;
@@ -457,6 +460,9 @@ footer {
   }
 }
 
+main .btn-outline-warning {
+  --bs-btn-active-color: white;
+}
 main .produk-kami-judul {
   background-image: linear-gradient(#fffaea, #fff);
   margin-top: 3rem !important;
@@ -480,46 +486,48 @@ main .produk-kami-judul nav a {
 main .produk-kami-judul nav span {
   margin: 0 10px;
 }
-@media screen and (max-width: 600px) {
-  main .produk-kami-barang {
-    padding-top: 0;
-  }
-}
-main .produk-kami-barang .filter-urutan a {
+main .filter-urutan a {
   text-decoration: none;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
 }
-main .produk-kami-barang .filter-urutan a:hover {
+@media screen and (max-width: 600px) {
+  main .filter-urutan a {
+    font-size: 14px;
+  }
+}
+main .filter-urutan a:hover {
   color: #f7be16;
 }
-main .produk-kami-barang .filter-urutan a span {
+main .filter-urutan a span {
   margin: 0 10px;
 }
 @media screen and (max-width: 600px) {
-  main .produk-kami-barang .filter-urutan a span {
+  main .filter-urutan a span {
     margin: 0 5px;
   }
 }
-main .produk-kami-barang .filter-urutan .offcanvas {
+main .filter-urutan a .offcanvas {
   font-size: 14px;
 }
-main .produk-kami-barang .filter-urutan .offcanvas .price label {
+main .filter-urutan a .offcanvas .price label {
   font-size: 16px;
   font-weight: bold;
 }
-main .produk-kami-barang .filter-urutan .offcanvas .price p {
+main .filter-urutan a .offcanvas .price p {
   font-size: 14px;
 }
-main .produk-kami-barang .filter-urutan .offcanvas .btn-outline-warning {
-  --bs-btn-active-color: white;
-}
-main .produk-kami-barang .filter-urutan .offcanvas .color {
+main .filter-urutan a .offcanvas .color {
   font-size: 16px;
   font-weight: bold;
   margin-top: 40px;
 }
-main .produk-kami-barang .filter-urutan .offcanvas .color label {
+main .filter-urutan a .offcanvas .color label {
   padding: 10px 30px;
   font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  main .produk-kami-barang {
+    padding-top: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

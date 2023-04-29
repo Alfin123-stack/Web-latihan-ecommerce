@@ -193,6 +193,12 @@ body{
                     width: 60px;
                     height: 60px;
                 }
+
+                a:visited {
+                    color: inherit;
+                }
+
+                
                 
     
                 button{
@@ -578,15 +584,26 @@ footer{
     }
 }
 
-
-
-
 //     AKHIR    HALAMAN UTAMA       (INDEX.HTML) 
 
 
+
+
+// ------------- Bagian Kategori -------------
+
 //  AWAL HALAMAN KATEGORI_SALE (KATEGORI_SALE.HTML)
 
+//     Main
 main{
+
+
+    // Tombol waring clik di saring
+    .btn-outline-warning {
+        --bs-btn-active-color: white;
+    }
+    
+
+    //  Produk kami judul
     .produk-kami-judul{
         background-image: linear-gradient(#fffaea,#fff);;
         margin-top: 3rem !important;
@@ -613,65 +630,67 @@ main{
         }
     }
 
+    // Tombol filter dan urutan
+    .filter-urutan{
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+
+            @media screen and (max-width : 600px) {
+                font-size: 14px;
+            }
+
+            &:hover{
+                color: #f7be16;
+            }
+
+            span{
+                margin: 0 10px;
+                @media screen and (max-width : 600px) {
+                    margin: 0 5px;
+                }
+            }
+
+
+            // Collapse
+            .offcanvas{
+            font-size: 14px;
+            .price{
+                label{
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                p{
+                    font-size: 14px;
+                }
+
+            }
+
+            .color{
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 40px;
+
+                label{
+                    padding: 10px 30px;
+                    font-size: 14px;
+
+                }
+            }
+        }
+        }
+       
+    }
+
+    // Produk baju
     .produk-kami-barang{
 
         @media screen and (max-width : 600px) {
            padding-top: 0;
         }
         
-        .filter-urutan{
-            a{
-                text-decoration: none;
-                color: black;
-                font-size: 14px;
-
-
-                &:hover{
-                    color: #f7be16;
-                }
-
-                span{
-                    margin: 0 10px;
-                    @media screen and (max-width : 600px) {
-                        margin: 0 5px;
-                    }
-                }
-            }
-
-            .offcanvas{
-                font-size: 14px;
-                .price{
-                    label{
-                        font-size: 16px;
-                        font-weight: bold;
-                    }
-
-                    p{
-                        font-size: 14px;
-                    }
-
-                }
-
-                .btn-outline-warning {
-                    --bs-btn-active-color: white;
-                }
-
-                .color{
-                    font-size: 16px;
-                    font-weight: bold;
-                    margin-top: 40px;
-
-                    label{
-                        padding: 10px 30px;
-                        font-size: 14px;
-
-                    }
-                }
-            }
-           
-        }
-
-
     }
 }
 
