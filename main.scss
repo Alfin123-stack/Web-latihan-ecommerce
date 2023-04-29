@@ -7,6 +7,10 @@ body{
 }
 
 
+
+//      HALAMAN UTAMA       (INDEX.HTML)      
+
+
 // alert Welcome
 .notif-welcome{
     z-index: 9999 !important;
@@ -573,3 +577,105 @@ footer{
         font-size: 12px;
     }
 }
+
+
+
+
+//     AKHIR    HALAMAN UTAMA       (INDEX.HTML) 
+
+
+//  AWAL HALAMAN KATEGORI_SALE (KATEGORI_SALE.HTML)
+
+main{
+    .produk-kami-judul{
+        background-image: linear-gradient(#fffaea,#fff);;
+        margin-top: 3rem !important;
+        padding: 5rem 0;
+
+        @media screen and (max-width : 600px) {
+            padding: 3rem 0;
+        }
+    
+        h1{
+            font-weight: bold;
+        }
+    
+        nav{
+            font-size: 14px;
+    
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            span{
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .produk-kami-barang{
+
+        @media screen and (max-width : 600px) {
+           padding-top: 0;
+        }
+        
+        .filter-urutan{
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+
+
+                &:hover{
+                    color: #f7be16;
+                }
+
+                span{
+                    margin: 0 10px;
+                    @media screen and (max-width : 600px) {
+                        margin: 0 5px;
+                    }
+                }
+            }
+
+            .offcanvas{
+                font-size: 14px;
+                .price{
+                    label{
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                    p{
+                        font-size: 14px;
+                    }
+
+                }
+
+                .btn-outline-warning {
+                    --bs-btn-active-color: white;
+                }
+
+                .color{
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-top: 40px;
+
+                    label{
+                        padding: 10px 30px;
+                        font-size: 14px;
+
+                    }
+                }
+            }
+           
+        }
+
+
+    }
+}
+
+
+
+
+

@@ -455,4 +455,71 @@ footer {
     margin-bottom: 50px;
     font-size: 12px;
   }
+}
+
+main .produk-kami-judul {
+  background-image: linear-gradient(#fffaea, #fff);
+  margin-top: 3rem !important;
+  padding: 5rem 0;
+}
+@media screen and (max-width: 600px) {
+  main .produk-kami-judul {
+    padding: 3rem 0;
+  }
+}
+main .produk-kami-judul h1 {
+  font-weight: bold;
+}
+main .produk-kami-judul nav {
+  font-size: 14px;
+}
+main .produk-kami-judul nav a {
+  text-decoration: none;
+  color: black;
+}
+main .produk-kami-judul nav span {
+  margin: 0 10px;
+}
+@media screen and (max-width: 600px) {
+  main .produk-kami-barang {
+    padding-top: 0;
+  }
+}
+main .produk-kami-barang .filter-urutan a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+main .produk-kami-barang .filter-urutan a:hover {
+  color: #f7be16;
+}
+main .produk-kami-barang .filter-urutan a span {
+  margin: 0 10px;
+}
+@media screen and (max-width: 600px) {
+  main .produk-kami-barang .filter-urutan a span {
+    margin: 0 5px;
+  }
+}
+main .produk-kami-barang .filter-urutan .offcanvas {
+  font-size: 14px;
+}
+main .produk-kami-barang .filter-urutan .offcanvas .price label {
+  font-size: 16px;
+  font-weight: bold;
+}
+main .produk-kami-barang .filter-urutan .offcanvas .price p {
+  font-size: 14px;
+}
+main .produk-kami-barang .filter-urutan .offcanvas .btn-outline-warning {
+  --bs-btn-active-color: white;
+}
+main .produk-kami-barang .filter-urutan .offcanvas .color {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+main .produk-kami-barang .filter-urutan .offcanvas .color label {
+  padding: 10px 30px;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
