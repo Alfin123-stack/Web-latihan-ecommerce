@@ -245,10 +245,9 @@ body{
 
 .produk{
 
-    min-height: 550px;
+    padding: 3rem 0;
 
     @media screen and (max-width : 600px) {
-        min-height: 0px;
         padding: 3rem 0;
     }
 
@@ -262,12 +261,15 @@ body{
 
     }
     
+    // card produk
     .card-produk{
         margin-top: 20px;
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
         transition: .5s;
+        position: relative;
+        padding-bottom: 50px;
         
         &:hover{
             box-shadow: -2px 2px 2px  rgba(0,0,0,.05), 2px 2px 2px  rgba(0,0,0,.05) ;
@@ -275,7 +277,6 @@ body{
 
         &:hover .keranjang-produk{
             display: inline-block;
-
             @media screen and (max-width : 600px) {
                 display : flex;
             }
@@ -301,7 +302,9 @@ body{
             }
         }
 
+        // button keranjang
         .keranjang-produk{
+            position: absolute;
             display: none;
 
             @media screen and (max-width : 600px) {
@@ -338,13 +341,10 @@ body{
 
 // Flash sale
 .flash-sale{
-    min-height: 400px;
-
+    margin-bottom: 50px;
     @media screen and (max-width : 600px) {
-        min-height: 0px;
-        padding: 3rem 0;
+        margin-bottom: 20px;
     }
-
     img{
         width: 100%;
     }
@@ -363,8 +363,7 @@ body{
 
 // semua produk
 .semua-produk{
-    min-height: 620px;
-
+    padding: 3rem 0;
     @media screen and (max-width : 600px) {
         min-height: 0px;
         padding: 3rem 0;
@@ -686,9 +685,22 @@ main{
 
     // Produk baju
     .produk-kami-barang{
-
         @media screen and (max-width : 600px) {
            padding-top: 0;
+        }
+
+        .produk-tidak-tersedia{
+            padding-top: 6rem;
+            i{
+                font-size: 5rem;
+            }
+            h3{
+                font-weight: bold;
+            }
+            p{
+                font-size: 12px;
+                color: #a9a0a0;
+            }
         }
         
     }
