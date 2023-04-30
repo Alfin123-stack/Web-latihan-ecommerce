@@ -480,6 +480,11 @@ main .produk-kami-judul h1 {
 main .produk-kami-judul nav {
   font-size: 14px;
 }
+@media screen and (max-width: 600px) {
+  main .produk-kami-judul nav {
+    font-size: 12px;
+  }
+}
 main .produk-kami-judul nav a {
   text-decoration: none;
   color: black;
@@ -490,11 +495,11 @@ main .produk-kami-judul nav span {
 main .filter-urutan a {
   text-decoration: none;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
 }
 @media screen and (max-width: 600px) {
   main .filter-urutan a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 main .filter-urutan a:hover {
