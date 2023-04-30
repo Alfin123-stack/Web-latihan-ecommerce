@@ -362,19 +362,25 @@ body{
 }
 
 // semua produk
+
+// jenis produk (sale,bestseller,men,women and etc)
+.gender-produk{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    font-size: .7rem;
+    color: rgb(125, 120, 120);
+    @media screen and (max-width : 600px) {
+        font-size: .6rem;
+    }
+}
+
+
 .semua-produk{
     padding: 3rem 0;
     @media screen and (max-width : 600px) {
         min-height: 0px;
         padding: 3rem 0;
-    }
-
-    .gender-produk{
-        text-align: center;
-        margin-top: 15px;
-        margin-bottom: -10px;
-        font-size: .7rem;
-        color: rgb(125, 120, 120);
     }
 
     .tampilkan{
