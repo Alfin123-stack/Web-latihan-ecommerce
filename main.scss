@@ -99,24 +99,25 @@ body{
 // Navbar bawah
 .navbar-bawah{
     display: none !important;
-    .card-nav{
-        cursor: pointer;
-        i{
-            font-size: 12px !important;
-            
-        }
-        .capt-nav{
-            font-size: 12px !important;
+    a{
+        text-decoration: none;
+        color: black;
+
+        .card-nav{
+            i{
+                font-size: 12px !important;
+                
+            }
+            .capt-nav{
+                font-size: 12px !important;
+            }
         }
     }
 
-
-     @media screen and (max-width : 992px) {
+    @media screen and (max-width : 992px) {
         display: block !important;
     }
-
 }
-
 
 
 
@@ -698,6 +699,7 @@ main{
            padding-top: 0;
         }
 
+        // Produk tidak tersedia
         .produk-tidak-tersedia{
             padding-top: 6rem;
             i{
@@ -715,7 +717,75 @@ main{
     }
 }
 
+// Kupon
+
+.kupon{
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+
+    a{
+        text-decoration: none;
+        color: black;
+
+        &:hover .card-kupon{
+            box-shadow: 0 3px 3px 3px rgba(0,0,0,.05);
+        }
+
+        .card-kupon{
+            padding: 10px;
+            font-size: 12px;
+            border: 2px solid #f7be16;
+    
+            i{
+                font-size: 14px;
+                color: #f7be16;
+                margin-right: 10px;
+            }
+        }
+    }
+    
+}
+
+
+// nav-total (keranjang)
+.nav-total{
+    // background-color: #a9a0a0;
+    box-shadow: 0 -3px 3px rgba(0,0,0,.05);
+    background-color: white;
+    padding: 10px 0;
+
+    p,span{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    span.subtotal-idr{
+        font-weight: bold;
+        position: absolute;
+        right: 0px;
+    }
+
+    p.total-harga{
+        font-weight: bold;
+    }
+
+    button{
+        padding: 10px 50px;
+        color: white;
+        border-radius: 3px;
+    }
+}
 
 
 
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+}
 
+.accordion{
+    --bs-accordion-border-color: white !important;
+    a{
+        color: #f7be16 !important;
+        
+    }
+}

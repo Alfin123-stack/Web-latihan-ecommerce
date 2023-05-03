@@ -68,13 +68,14 @@ body {
 .navbar-bawah {
   display: none !important;
 }
-.navbar-bawah .card-nav {
-  cursor: pointer;
+.navbar-bawah a {
+  text-decoration: none;
+  color: black;
 }
-.navbar-bawah .card-nav i {
+.navbar-bawah a .card-nav i {
   font-size: 12px !important;
 }
-.navbar-bawah .card-nav .capt-nav {
+.navbar-bawah a .card-nav .capt-nav {
   font-size: 12px !important;
 }
 @media screen and (max-width: 992px) {
@@ -555,4 +556,60 @@ main .produk-kami-barang .produk-tidak-tersedia h3 {
 main .produk-kami-barang .produk-tidak-tersedia p {
   font-size: 12px;
   color: #a9a0a0;
+}
+
+.kupon {
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+}
+.kupon a {
+  text-decoration: none;
+  color: black;
+}
+.kupon a:hover .card-kupon {
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+.kupon a .card-kupon {
+  padding: 10px;
+  font-size: 12px;
+  border: 2px solid #f7be16;
+}
+.kupon a .card-kupon i {
+  font-size: 14px;
+  color: #f7be16;
+  margin-right: 10px;
+}
+
+.nav-total {
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  padding: 10px 0;
+}
+.nav-total p, .nav-total span {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.nav-total span.subtotal-idr {
+  font-weight: bold;
+  position: absolute;
+  right: 0px;
+}
+.nav-total p.total-harga {
+  font-weight: bold;
+}
+.nav-total button {
+  padding: 10px 50px;
+  color: white;
+  border-radius: 3px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
+}
+
+.accordion {
+  --bs-accordion-border-color: white !important;
+}
+.accordion a {
+  color: #f7be16 !important;
 }/*# sourceMappingURL=main.css.map */
