@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+     <!-- MY css -->
+     <link rel="stylesheet" href="../main.css">
+
+     <!-- Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+ 
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+  
+      <!-- Navbar LG -->
+      <nav class="navbar navbar-expand-lg bg-white p-3 fixed-top navbar-all-device">
+        <div class="container">
+            <a href="#">
+              <img src="../img/logo.webp" alt="" class="logo">
+            </a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+  
+  
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+  
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-cart-fill position-relative">
+                          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            4
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>
+  
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- akhir navbar LG -->
+  
+      <!-- Navbar Collapse XS -->
+      <nav class="navbar bg-white fixed-top navbar-handphone">
+        <div class="container-fluid">
+  
+          <!-- Toogle Menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#">
+            <img src="../img/logo.webp" alt="" class="logo">
+          </a>
+          <!-- Toogle Search -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarsearch" aria-controls="offcanvasNavbarsearch" aria-label="Toggle navigation">
+            <i class="bi bi-search"></i>
+          </button>
+       
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <hr>
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">All Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">WHATS NEW</a>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    WOMEN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">JEANS</a></li>
+                    <li><a class="dropdown-item" href="#">OUTWEAR</a></li>
+                    <li><a class="dropdown-item" href="#">T-SHIRT</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    MEN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">BOTTOM</a></li>
+                    <li><a class="dropdown-item" href="#">TOP</a></li>
+                    <li><a class="dropdown-item" href="#">TOPS</a></li>
+                    <li><a class="dropdown-item" href="#">JEANS</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> SALE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">GIFT CARD</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">LOOKBOOK</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="offcanvas offcanvas-end search" tabindex="-1" id="offcanvasNavbarsearch" aria-labelledby="offcanvasNavbarLabel2">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pencarian Produk</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <hr>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Cari Produk Apa Saja" aria-label="Search">
+                <button class="btn btn-warning" type="submit">Search</button>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+      <!-- Akhir Navbar Collapse XS -->
+
+
+      <!-- Awal Main -->
+      <main>
+
+        <!-- Awal Bagian Judul produk kami  -->
+        <div class="produk-kami-judul">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>LOGIN</h1>
+                        <nav>
+                            <a href="../index.html">
+                                <span>Beranda</span>
+                            </a>
+                            <i class="bi bi-chevron-right"></i>
+                            <span>Login</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir bagian judul produk kami -->
+
+        <!-- Awal Login -->
+        <div class="produk produk-kami-barang">
+          <div class="container">
+
+            <!-- Login-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-12 text-center">
+
+                  <div class="pilih-wa-email">
+                    <a href="#card-whatsapp">
+                      <div class="pilih-wa text-center">
+                        <i class="bi bi-whatsapp"></i>
+                        <span>Masuk dengan Whatsapp</span>
+                      </div>
+                    </a>
+  
+                    <a href="#card-email">
+                      <div class="pilih-email text-center">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>Masuk dengan Email</span>
+                      </div>
+                    </a>
+                  </div>
+                  
+
+
+                    <!-- login email -->
+                    <div class="card-login-email card-email" id="card-email">
+                        <h5 class=" text-start">Selamat Datang Kembali !</h5>
+                        <p class=" text-start">Masukkan Kredensial Anda untuk masuk</p>
+
+                        <form action="" class=" text-start">
+                            <div class="email">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="email">Alamat Email</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="email" placeholder="Masukkan Email Anda">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pw">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="pw">Kata Sandi</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="password" placeholder="Masukkan Kata Sandi Anda">
+                                    </div>
+                                </div>    
+
+                                <div class="btn-form text-center">
+                                  <button type="button" class="btn btn-warning">Masuk</button>
+                                </div>
+                            </div>          
+
+                        </form>
+
+                        <div class="mendaftar-lupakatasandi text-center">
+                            <p class="lupa-sandi">Lupa Kata Sandi? <a href="#">Klik disini</a></p>
+                            <p class="belum-punya-akun">Belum Punya AKun? <a href="#">Silahkan Mendaftar</a></p>
+                        </div>      
+                    </div>
+                    <!-- akhir login email -->
+
+                    <!-- login whatsapp -->
+                    <div class="card-login-email card-whatsapp" id="card-whatsapp">
+                      <h5 class=" text-start">Selamat Datang Kembali !</h5>
+                      <p class=" text-start">Masukan nomor Whatsapp Anda untuk masuk ke toko kami</p>
+
+                      <form action="" class=" text-start">
+                          <div class="email">
+                              <div class="row">
+                                  <div class="col-12">
+                                      <label for="email">Nomor Whatsapp</label>
+                                  </div>
+                                  <div class="col-12">
+                                      <input type="text" placeholder="0800 0000 0000">
+                                  </div>
+                              </div>
+                          </div>          
+
+                          <div class="btn-form text-center">
+                            <button type="button" class="btn btn-warning">Masuk</button>
+                          </div>
+                      </form>
+
+                      <div class="mendaftar-lupakatasandi text-center">
+                          <p class="lupa-sandi">Dengan klik 'Masuk/Daftar' berarti Anda setuju menerima pemberitahuan melalui WhatsApp dan mengetahui <a href="#">Syarat & Ketentuan</a> serta <a href="#">Kebijakan Privasi</a> dari Demo-Merlin</p>
+                          <p class="belum-punya-akun">Belum Punya AKun? <a href="#">Silahkan Mendaftar</a></p>
+                      </div>
+
+                      
+                  </div>
+                  <!-- akhir login whatsapp -->
+
+
+
+
+                </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Akhir Login -->
+
+      </main>
+      <!-- akhir Main-->
+
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 merlin-about">
+              <img src="../img/logo.webp" alt="" class="logo">
+              <p>Merlin is an e-commerce theme focused on collecting, grouping your content and selling your products. It is perfect for small-to-high traffic e-commerce bussiness site.</p>
+  
+              <div class="waktu-operasional">
+                <h5>Waktu Operasional</h5>
+                <p>Setiap Hari (Senin - Minggu) <br> Pukul 9.00 - 17.00 WIB</p>
+  
+              </div>
+            </div>
+  
+            <div class="col-lg-2 merlin-kategori">
+              <h5>Categories</h5>
+              <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>T-Shirt</li>
+                <li>Jeans</li>
+                <li>Jacket</li>
+                <li>Blazer</li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-2 merlin-brand">
+              <h5>Brand</h5>
+              <ul>
+                <li>Kenn</li>
+                <li>Artistoys</li>
+                <li>2K</li>
+                <li>Jamungo</li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-2 merlin-payment">
+              <h5>Payment Channel</h5>
+              <ul>
+                <li><img src="../img-payment/Bca.svg" alt=""></li>
+                <li><img src="../img-payment/Bni.svg" alt=""></li>
+                <li><img src="../img-payment/mandiri.svg" alt=""></li>
+                <li><img src="../img-payment/bri.svg" alt=""></li>
+                <li><img src="../img-payment/danamon.svg" alt=""></li>
+                <li><img src="../img-payment/maybank.svg" alt=""></li>
+                <li><img src="../img-payment/cimb-bank.svg" alt=""></li>
+                <li><img src="../img-payment/alfamart.svg" alt=""></li>
+                <li><img src="../img-payment/ovo.svg" alt=""></li>
+                <li><img src="../img-payment/indomaret.svg" alt=""></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 merlin-followUs">
+              <h5>Ikuti Kami</h5>
+  
+              <p>Berlangganan berita dan dapatkan penawaran eksklusif setiap minggu</p>
+  
+              <div class="row">
+                <div class="col-lg-8">
+                  <input type="email" placeholder="Masukkan email anda" id="email">
+                </div>
+                <div class="col-lg-4">
+                  <button type="button" class="btn btn-warning" >Langganan</button>
+                </div>
+              </div>
+  
+              <div class="ikon">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+              </div>
+            </div>
+  
+  
+            <!-- COLLAPSE -->
+  
+            <div class="col-lg-2 merlin-collapse mt-3">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <h5>Categories</h5>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>T-Shirt</li>
+                        <li>Jeans</li>
+                        <li>Jacket</li>
+                        <li>Blazer</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+  
+            <div class="col-lg-2 merlin-collapse mt-3">
+              <div class="accordion" id="accordionExample2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                      <h5>Brand</h5>
+                    </button>
+                  </h2>
+                  <div id="collapsetwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Kenn</li>
+                        <li>Artistoys</li>
+                        <li>2K</li>
+                        <li>Jamungo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-2 merlin-collapse mt-3">
+                <div class="accordion" id="accordionExample3">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+                        <h5>Payment Channel</h5>
+                      </button>
+                    </h2>
+                    <div id="collapsethree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample3">
+                      <div class="accordion-body">
+                        <ul>
+                          <li><img src="../img-payment/Bca.svg" alt=""></li>
+                          <li><img src="../img-payment/Bni.svg" alt=""></li>
+                          <li><img src="../img-payment/mandiri.svg" alt=""></li>
+                          <li><img src="../img-payment/bri.svg" alt=""></li>
+                          <li><img src="../img-payment/danamon.svg" alt=""></li>
+                          <li><img src="../img-payment/maybank.svg" alt=""></li>
+                          <li><img src="../img-payment/cimb-bank.svg" alt=""></li>
+                          <li><img src="../img-payment/alfamart.svg" alt=""></li>
+                          <li><img src="../img-payment/ovo.svg" alt=""></li>
+                          <li><img src="../img-payment/indomaret.svg" alt=""></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>     
+            </div>
+  
+          </div>
+        </div>
+      </section>
+      <!-- Akhir about -->
+      
+      <!-- footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              COPYRIGHT 2023 POWERED BY M.ALFIN ALL RIGHT RESERVED
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+  
+       <!-- Navbar bottom -->
+     <div class="bg-white navbar-bawah fixed-bottom">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-3 text-center">
+              <a href="#">
+                <div class="card-nav">
+                  <i class="bi bi-house-door-fill"></i>
+                  <p class="capt-nav">
+                    Beranda
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-3 text-center">
+              <a href="halaman_tampilkan/tampilkan_semua.html">
+                <div class="card-nav">
+                  <i class="bi bi-grid-fill"></i>
+                  <p class="capt-nav">
+                    Toko
+                  </p>
+                </div> 
+              </a>
+            </div>
+            <div class="col-3 text-center">
+              <a href="halaman_tampilkan/tampilkan_keranjang.html">
+                <div class="card-nav position-relative">
+                  <span class="position-absolute top-30 end-0 translate-middle badge rounded-pill bg-warning">
+                    4
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <i class="bi bi-bag-fill"></i>
+                  <p class="capt-nav">
+                    Keranjang
+                  </p>
+                </div>
+              </a>
+            </div>
+  
+            <div class="col-3 text-center">
+              <a href="halaman_tampilkan/tampilkan_login.html">
+                <div class="card-nav">
+                  <i class="bi bi-door-open-fill"></i>
+                  <p class="capt-nav">
+                    Masuk
+                  </p>
+                </div>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Navbar bottom -->
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

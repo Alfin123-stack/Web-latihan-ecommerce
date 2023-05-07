@@ -789,3 +789,123 @@ main{
         
     }
 }
+
+
+// lOGIN 
+.card-login-email{
+    margin-top: 3rem;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,.05), -5px -5px 5px 3px rgba(0,0,0,.05);
+    border-radius: 5px; 
+
+    h5{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 13px;
+        color: #a6a6a6;
+    }
+
+    form{
+        label{
+            margin-top: 20px;
+            font-size: 13px;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #a6a6a6;
+            margin-top: 10px;
+
+        }
+
+        .btn-form{
+            button{
+                padding: 15px 70px;
+                color: white;
+                border-radius: 5px;
+                margin-top: 20px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .mendaftar-lupakatasandi{
+        margin-top: 30px;
+        font-size: 13px !important;
+        p{
+            color: black;
+            a{
+                font-weight: bold;
+                text-decoration: none;
+
+                &:hover{
+                    color: #f7be16;
+                }
+            }
+        }
+    }
+
+}
+
+.pilih-wa-email{
+    a{
+        text-decoration: none;
+        color: black;
+    
+        &:hover{
+            color: #f7be16;
+        }
+        .pilih-wa, .pilih-email{
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid black;
+            width: 50%;
+            font-size: 16px;
+    
+    
+            @media screen and (max-width : 600px) {
+                padding: 15px;
+                font-size: 14px;
+                width: 80%;
+            }
+    
+            
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+.card-email{
+    display: none;
+}
+
+
+// card wahstapp
+.card-whatsapp{
+    display: none;
+    a{
+        .pilih-email{
+            width: 40%;
+
+            @media screen and (max-width : 600px) {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.card-whatsapp:target{
+    display: block;
+}
+
+.card-email:target{
+    display: block;
+}
+
