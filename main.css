@@ -431,6 +431,9 @@ body {
 .about .merlin-collapse .accordion .accordion-item h5 {
   margin-bottom: 5px;
 }
+.about .merlin-collapse .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #f6f6f8 !important;
+}
 .about .merlin-collapse .accordion .accordion-item [type=button]:not(:disabled), .about .merlin-collapse .accordion .accordion-item [type=reset]:not(:disabled), .about .merlin-collapse .accordion .accordion-item [type=submit]:not(:disabled), .about .merlin-collapse .accordion .accordion-item button:not(:disabled) {
   cursor: auto;
 }
@@ -648,10 +651,14 @@ main .produk-kami-barang .produk-tidak-tersedia p {
 }
 .card-login-email .mendaftar-lupakatasandi {
   margin-top: 30px;
-  font-size: 13px !important;
 }
 .card-login-email .mendaftar-lupakatasandi p {
   color: black;
+}
+@media screen and (max-width: 600px) {
+  .card-login-email .mendaftar-lupakatasandi p {
+    font-size: 12px;
+  }
 }
 .card-login-email .mendaftar-lupakatasandi p a {
   font-weight: bold;

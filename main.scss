@@ -534,7 +534,9 @@ body{
                 h5{
                     margin-bottom: 5px;
                 }
-                
+                .accordion-button:not(.collapsed) {
+                    background-color: #f6f6f8 !important;
+                }
 
                 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
                     cursor: auto;
@@ -834,9 +836,14 @@ main{
 
     .mendaftar-lupakatasandi{
         margin-top: 30px;
-        font-size: 13px !important;
+        
         p{
+            
             color: black;
+
+            @media screen and (max-width : 600px) {
+                font-size: 12px;
+             }
             a{
                 font-weight: bold;
                 text-decoration: none;
