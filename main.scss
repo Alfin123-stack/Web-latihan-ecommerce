@@ -40,6 +40,7 @@ body{
 // Navbar all device
 
 .navbar-all-device{
+    box-shadow: 0 1px 5px rgba(0,0,0,.05);
 
     @media screen and (max-width : 992px) {
         display: none !important;
@@ -51,6 +52,7 @@ body{
     font-size: 14px;
     font-weight: 500 ;
     display: none !important;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 
     @media screen and (max-width : 992px) {
         display: block !important;
@@ -99,6 +101,7 @@ body{
 // Navbar bawah
 .navbar-bawah{
     display: none !important;
+    box-shadow: 0 -1px 1px rgba(0,0,0,.05);
     a{
         text-decoration: none;
         color: black;

@@ -24,6 +24,9 @@ body {
   width: 100px;
 }
 
+.navbar-all-device {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
 @media screen and (max-width: 992px) {
   .navbar-all-device {
     display: none !important;
@@ -34,6 +37,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   display: none !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 @media screen and (max-width: 992px) {
   .navbar-handphone {
@@ -67,6 +71,7 @@ body {
 
 .navbar-bawah {
   display: none !important;
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.05);
 }
 .navbar-bawah a {
   text-decoration: none;
